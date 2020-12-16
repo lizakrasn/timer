@@ -1,0 +1,13 @@
+<div class="timer">
+  <p>Let's start - 
+    {{convertToString(hours)}} : {{convertToString(minutes)}} : {{convertToString(seconds)}}
+  </p>
+  <div class="timer__buttons">
+    <button (click)="startTimer()">
+      {{isStarted ? 'Stop' : 'Start'}}
+    </button>
+    <button>Wait</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+</div>
+
